@@ -1,0 +1,7 @@
+{
+    "watch": ["server/src"],
+    "ignore": ["src/**/*.test.ts"],
+    "ext": "ts,mjs,js,json,css",
+    "exec": "node_modules/.bin/esbuild server/src/index.ts --sourcemap --bundle --outfile=server/dist/server.js --platform=node --target=es2019 && node --enable-source-maps server/dist/server.js",
+    "legacyWatch": true
+}
